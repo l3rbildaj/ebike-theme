@@ -203,6 +203,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "subheading": "",
