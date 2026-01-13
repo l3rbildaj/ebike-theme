@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "t:sections.header.settings.header-group.label",
@@ -14,18 +23,24 @@
     "header": {
       "type": "header",
       "settings": {
+        "logo": "shopify://shop_images/Gemini_Generated_Image_3j45o83j45o83j45.png",
         "logo_position": "center-logo",
         "logo_width": 200,
+        "secondary_logo_width": 100,
+        "secondary_logo_url": "",
         "menu": "main-menu",
         "sticky_header_type": "on-scroll-up",
         "enable_country_selector": true,
         "enable_language_selector": false,
         "enable_social": false,
         "enable_search": true,
-        "search_menu": "popular-searches",
+        "search_menu": "",
         "enable_border": false
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }
