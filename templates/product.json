@@ -101,8 +101,8 @@
           "type": "product_countdown",
           "settings": {
             "color_scheme": "background-1",
-            "countdown_promo_text": "Offer Ends Soon",
-            "show_on_mobile": true,
+            "countdown_promo_text": "",
+            "show_on_mobile": false,
             "show_countdown": false,
             "date_picker": "2026-2-01",
             "time_picker": "00:00",
