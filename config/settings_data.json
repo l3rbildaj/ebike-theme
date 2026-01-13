@@ -40,7 +40,7 @@
     "show_cart_note_drawer": true,
     "title_empty_cart": "Oops...",
     "text_empty_cart": "Don't miss out on the best deals! Your cart may be empty now, but let us help you fill it up with amazing products.",
-    "show_shipping": true,
+    "show_shipping": false,
     "show_cart_recommended_products": true,
     "cart_recommended_products": [],
     "pagination_type": "infinite_scroll",
@@ -1026,7 +1026,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".breadcrumb {display:none !important;}"
+      ".breadcrumb {display: none !important;}"
     ]
   }
 }
