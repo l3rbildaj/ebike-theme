@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "t:sections.footer.settings.footer-group.label",
@@ -9,6 +18,8 @@
           "type": "link_list",
           "name": "t:sections.footer.blocks.link_list.name",
           "settings": {
+            "heading": "Quick Links",
+            "menu": "main-menu",
             "default_open": false
           }
         },
@@ -16,6 +27,8 @@
           "type": "link_list",
           "name": "t:sections.footer.blocks.link_list.name",
           "settings": {
+            "heading": "Best Sellers",
+            "menu": "products",
             "default_open": false
           }
         },
@@ -23,6 +36,8 @@
           "type": "link_list",
           "name": "t:sections.footer.blocks.link_list.name",
           "settings": {
+            "heading": "Polcies",
+            "menu": "policies",
             "default_open": false
           }
         },
@@ -38,13 +53,18 @@
           }
         }
       },
-      "block_order": ["link_list_1", "link_list_2", "link_list_3", "subscribe"],
+      "block_order": [
+        "link_list_1",
+        "link_list_2",
+        "link_list_3",
+        "subscribe"
+      ],
       "settings": {
         "color_scheme": "background-3",
         "animate_on_scroll": true,
         "show_logo": true,
         "logo_width": 900,
-        "main_text": "Use this space for a short company tagline or mission statement.",
+        "main_text": "",
         "head_alignment": "center",
         "blocks_alignment": "evenly",
         "show_socials": true,
@@ -62,5 +82,7 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }
