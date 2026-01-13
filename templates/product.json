@@ -134,6 +134,10 @@
         "custom_liquid_cJgcDU",
         "product_countdown_kYXNdH"
       ],
+      "custom_css": [
+        ".price-item--sale {font-weight: 800; color: red; font-size: 22px;}",
+        ".badge--sale {background-color: red;}"
+      ],
       "settings": {
         "color_scheme": "",
         "desktop_alignment": "left",
