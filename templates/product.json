@@ -36,7 +36,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_tax_info": true
+            "show_tax_info": false
           }
         },
         "description": {
