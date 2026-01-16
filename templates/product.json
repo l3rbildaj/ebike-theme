@@ -62,24 +62,15 @@
             "custom_liquid": "<!-- In Stock Badge -->\n<div class=\"stock-badge in-stock\">\n  <span class=\"stock-dot\"></span>\n  <span class=\"stock-text\">In stock</span>\n</div>\n\n<style>\n.stock-badge {\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\nmargin-top:0px;\nmargin-bottom:0px;\n  padding: 8px 14px;\n  border-radius: 999px;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Arial, sans-serif;\n  font-size: 14px;\n  font-weight: 600;\n}\n\n/* In Stock */\n.stock-badge.in-stock {\n  background-color: #e8f7ee; /* light green */\n  color: #1e7f4d; /* dark green text */\n}\n\n.stock-dot {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background-color: #2ecc71; /* green dot */\n  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.15);\n}\n</style>"
           }
         },
-        "complementary": {
-          "type": "complementary",
+        "custom_liquid_cd7J6f": {
+          "type": "custom_liquid",
           "settings": {
-            "heading": "Add Ons",
-            "products_limit": 2,
-            "image_fit": "cover",
-            "show_vendor": false
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "settings": {
-            "show_inventory_amount": true,
-            "limited_stock": 10
+            "custom_liquid": "<a href=\"https://buy.stripe.com/14A3co3g8cm68h99469EI01\"\n   class=\"stripe-buy-button\">\n  Buy Now\n</a>\n<style>.stripe-buy-button {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n  text-align: center;\n\n  background: #3b6eea; /* Stripe-like blue */\n  color: #ffffff;\n  font-size: 20px;\n  font-weight: 700;\n  text-decoration: none;\n\n  padding: 18px 24px;\n  border-radius: 999px; /* fully rounded */\n  transition: transform 0.08s ease, \n\n  box-shadow: 0 8px 20px rgba(59, 110, 234, 0.35);\n}\n\n/* Hover */\n.stripe-buy-button:hover {\n  background: #2f5bd1;\n}\n\n/* Active / click */\n.stripe-buy-button:active {\n  transform: scale(0.98);\n}\n\n/* Mobile tweak */\n@media (max-width: 600px) {\n  .stripe-buy-button {\n    font-size: 18px;\n    padding: 16px 20px;\n  }\n}\n</style>"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_quantity": true,
@@ -103,21 +94,6 @@
           "settings": {
             "custom_liquid": "<style>\n  .auvressa-benefits-wrapper {\n    background-color: #f9f9f9; /* The light grey container background */\n    padding: 24px;\n    border-radius: 16px;\n    max-width: 600px;\n    margin: 20px auto;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;\n  }\n\n  .benefit-item {\n    display: flex;\n    align-items: center;\n    padding: 16px 20px;\n    margin-bottom: 12px;\n    border-radius: 12px;\n    background-color: transparent; /* Default for non-highlighted rows */\n    color: #121212;\n    font-size: 15px;\n    line-height: 1.4;\n  }\n\n  /* White card styling for specific rows like 'In stock' and '30 Day Return' */\n  .benefit-item.card-style {\n    background-color: #ffffff;\n\n  }\n\n  .benefit-icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 24px;\n    height: 24px;\n    margin-right: 16px;\n    flex-shrink: 0;\n  }\n\n  /* Styling the outline icons to match the screenshot */\n  .benefit-icon svg {\n    width: 20px;\n    height: 20px;\n    stroke-width: 1.5px;\n  }\n\n  .benefit-item:last-child {\n    margin-bottom: 0;\n  }\n</style>\n\n<div class=\"auvressa-benefits-wrapper\">\n  <div class=\"benefit-item card-style\">\n    <div class=\"benefit-icon\">\n      <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path></svg>\n    </div>\n    <span>In stock! Ships within 3-5 business days.</span>\n  </div>\n\n  <div class=\"benefit-item\">\n    <div class=\"benefit-icon\">\n      <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z\"></path></svg>\n    </div>\n    <span>12 Month Warranty</span>\n  </div>\n\n  <div class=\"benefit-item card-style\">\n    <div class=\"benefit-icon\">\n      <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.129-1.125V11.25c0-4.446-3.51-7.14-7.5-7.14H9c-4.332 0-8.134 3.197-8.134 7.5v3.427m13.134-10.926V9m3.334 2.364C20.33 9.268 18.843 9 17.244 9m-1.114 1.252l-2.25 2.25m0 0l-2.25-2.25m2.25 2.25V6.75\"></path></svg>\n    </div>\n    <span>30 Day Return</span>\n  </div>\n\n  <div class=\"benefit-item\">\n    <div class=\"benefit-icon\">\n      <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-5.25v9\"></path></svg>\n    </div>\n    <span>Complimentary shipping & returns</span>\n  </div>\n</div>"
           }
-        },
-        "product_countdown_kYXNdH": {
-          "type": "product_countdown",
-          "settings": {
-            "color_scheme": "background-1",
-            "countdown_promo_text": "",
-            "show_on_mobile": true,
-            "show_countdown": false,
-            "date_picker": "2026-2-01",
-            "time_picker": "00:00",
-            "completed_countdown": "show_text",
-            "countdown_final_text": "Text after countdown has ended",
-            "button_label": "Buy now",
-            "button_style": "primary"
-          }
         }
       },
       "block_order": [
@@ -127,13 +103,11 @@
         "description",
         "variant_picker",
         "custom_liquid_WkfXcK",
-        "complementary",
-        "inventory",
+        "custom_liquid_cd7J6f",
         "buy_buttons",
         "custom_liquid_Q9cGax",
         "custom_liquid_je3zqd",
-        "custom_liquid_cJgcDU",
-        "product_countdown_kYXNdH"
+        "custom_liquid_cJgcDU"
       ],
       "custom_css": [
         ".price-item--sale {font-weight: 800; color: red; font-size: 22px;}",
