@@ -65,7 +65,13 @@
         "custom_liquid_cd7J6f": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<a href=\"https://buy.stripe.com/14A3co3g8cm68h99469EI01\"\n   class=\"stripe-buy-button\">\n  Buy Now\n</a>\n<style>.stripe-buy-button {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n  text-align: center;\n\n  background: #3b6eea; /* Stripe-like blue */\n  color: #ffffff;\n  font-size: 20px;\n  font-weight: 700;\n  text-decoration: none;\n\n  padding: 18px 24px;\n  border-radius: 999px; /* fully rounded */\n  transition: transform 0.08s ease, \n\n  box-shadow: 0 8px 20px rgba(59, 110, 234, 0.35);\n}\n\n/* Hover */\n.stripe-buy-button:hover {\n  background: #2f5bd1;\n}\n\n/* Active / click */\n.stripe-buy-button:active {\n  transform: scale(0.98);\n}\n\n/* Mobile tweak */\n@media (max-width: 600px) {\n  .stripe-buy-button {\n    font-size: 18px;\n    padding: 16px 20px;\n  }\n}\n</style>"
+            "custom_liquid": "<a href=\"https://buy.stripe.com/14A3co3g8cm68h99469EI01\"\n   class=\"stripe-buy-button\"\nid=\"bb-main-buy\"\n>\n  Buy Now\n</a>\n<style>.stripe-buy-button {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n  text-align: center;\n\n  background: #3b6eea; /* Stripe-like blue */\n  color: #ffffff;\n  font-size: 20px;\n  font-weight: 700;\n  text-decoration: none;\n\n  padding: 18px 24px;\n  border-radius: 999px; /* fully rounded */\n  transition: transform 0.08s ease, \n\n  box-shadow: 0 8px 20px rgba(59, 110, 234, 0.35);\n}\n\n/* Hover */\n.stripe-buy-button:hover {\n  background: #2f5bd1;\n}\n\n/* Active / click */\n.stripe-buy-button:active {\n  transform: scale(0.98);\n}\n\n/* Mobile tweak */\n@media (max-width: 600px) {\n  .stripe-buy-button {\n    font-size: 18px;\n    padding: 16px 20px;\n  }\n}\n</style>"
+          }
+        },
+        "custom_liquid_fRbn38": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- STICKY BUTTON (can stay anywhere in the page) -->\n<a href=\"https://buy.stripe.com/YOUR_STRIPE_LINK\"\n   class=\"bb-buy-btn bb-buy-btn--sticky\"\n   id=\"bb-sticky-buy\"\n   aria-label=\"Buy Now (Sticky)\">\n  Buy Now\n</a>\n\n<style>\n  /* ===== Button base style ===== */\n  .bb-buy-btn{\n    display:block;\n    width:91%;\n    text-align:center;\n    background:#3b6eea;\n    color:#fff;\n    font-size:20px;\n    font-weight:700;\n    text-decoration:none;\n    padding:18px 24px;\n    border-radius:999px;\n    box-shadow:0 8px 20px rgba(59,110,234,.35);\n    transition:transform .08s ease, box-shadow .15s ease, background .15s ease;\n    -webkit-tap-highlight-color: transparent;\n  }\n  .bb-buy-btn:hover{ background:#2f5bd1; box-shadow:0 10px 24px rgba(59,110,234,.45); }\n  .bb-buy-btn:active{ transform:scale(.98); }\n\n  /* ===== Sticky button (mobile only) ===== */\n  .bb-buy-btn--sticky{\n    position:fixed;\n    left:16px;\n    right:16px;\n    bottom:14px;\n    z-index:9999;\n    display:none; /* JS will toggle */\n  }\n\n  /* Mobile tweaks */\n  @media (max-width: 600px){\n    .bb-buy-btn{ font-size:18px; padding:16px 20px; }\n  }\n\n  /* Hide sticky on desktop */\n  @media (min-width: 769px){\n    .bb-buy-btn--sticky{ display:none !important; }\n  }\n</style>\n\n<script>\n(function () {\n  const mainBtn = document.getElementById(\"bb-main-buy\");\n  const stickyBtn = document.getElementById(\"bb-sticky-buy\");\n  if (!mainBtn || !stickyBtn) return;\n\n  // Extra safety: only run on mobile widths\n  const isMobile = () => window.matchMedia(\"(max-width: 768px)\").matches;\n\n  const setSticky = (show) => {\n    if (!isMobile()) {\n      stickyBtn.style.display = \"none\";\n      return;\n    }\n    stickyBtn.style.display = show ? \"block\" : \"none\";\n  };\n\n  // IntersectionObserver shows sticky when main is NOT visible\n  let observer;\n  const initObserver = () => {\n    if (observer) observer.disconnect();\n\n    observer = new IntersectionObserver(\n      ([entry]) => setSticky(!entry.isIntersecting),\n      { threshold: 0.35 }\n    );\n\n    observer.observe(mainBtn);\n  };\n\n  initObserver();\n  window.addEventListener(\"resize\", initObserver);\n})();\n</script>"
           }
         },
         "buy_buttons": {
@@ -104,6 +110,7 @@
         "variant_picker",
         "custom_liquid_WkfXcK",
         "custom_liquid_cd7J6f",
+        "custom_liquid_fRbn38",
         "buy_buttons",
         "custom_liquid_Q9cGax",
         "custom_liquid_je3zqd",
