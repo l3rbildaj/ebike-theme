@@ -55,11 +55,6 @@
     "show_color_swatch": true,
     "content_for_index": [],
     "blocks": {
-      "9536980985073592808": {
-        "type": "shopify://apps/zotek-facebook-tiktok-pixel/blocks/pixelEmbed/e17ae0a7-f600-440d-80e8-705183c6ec36",
-        "disabled": false,
-        "settings": {}
-      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
@@ -70,7 +65,7 @@
           "button_icon": "chat_bubble",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "higher",
+          "button_vertical_position": "highest",
           "greeting_message": ""
         }
       }

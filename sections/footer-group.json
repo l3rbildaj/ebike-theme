@@ -28,7 +28,7 @@
           "name": "t:sections.footer.blocks.link_list.name",
           "settings": {
             "heading": "Best Sellers",
-            "menu": "products",
+            "menu": "footer",
             "default_open": false
           }
         },
@@ -37,7 +37,7 @@
           "name": "t:sections.footer.blocks.link_list.name",
           "settings": {
             "heading": "Polcies",
-            "menu": "policies",
+            "menu": "footer",
             "default_open": false
           }
         },
@@ -63,7 +63,8 @@
         "color_scheme": "background-3",
         "animate_on_scroll": true,
         "show_logo": true,
-        "logo_width": 900,
+        "logo": "shopify://shop_images/Gemini_Generated_Image_ocp0rkocp0rkocp0-removebg-preview.png",
+        "logo_width": 270,
         "main_text": "",
         "head_alignment": "center",
         "blocks_alignment": "evenly",
