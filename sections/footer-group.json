@@ -28,7 +28,7 @@
           "name": "t:sections.footer.blocks.link_list.name",
           "settings": {
             "heading": "Best Sellers",
-            "menu": "footer",
+            "menu": "best-sellers",
             "default_open": false
           }
         },
